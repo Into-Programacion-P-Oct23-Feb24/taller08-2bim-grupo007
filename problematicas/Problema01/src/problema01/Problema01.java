@@ -64,7 +64,8 @@ public class Problema01 {
         System.out.printf("%s",acumulador);
         System.out.printf("%s",edadesJuntas);
         System.out.printf("\nPromedio de edades: %.1f",promedioEdades);
-        System.out.printf(" Promedio de estaturas: %.2f\n", promedioEstatura);
+        System.out.printf(" Promedio de estaturas: %.2f\n"
+                , promedioEstatura);
     }
 
 }
