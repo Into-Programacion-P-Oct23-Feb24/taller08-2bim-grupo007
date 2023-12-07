@@ -27,7 +27,7 @@ public class Problema03 {
                 + "Grados Celsius\n";
         int i;
         int e = 20;
-        for (i = 1; i < 20; i++) {
+        for (i = 1; i <= 20; i++) {
             gradosC = (e - 32.0) * 5 / 9;
             tabla = String.format("%s      %s                "
                     + "%.2f\n", tabla, e, gradosC);
