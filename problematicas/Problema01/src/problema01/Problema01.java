@@ -36,7 +36,6 @@ public class Problema01 {
                 + "ingresar datos");
         numero = entrada.nextInt();
         
-        
         for (int contador = 1; contador <= numero; contador++) {
             entrada.nextLine();
             System.out.println("Ingrese el nombre del jugador");

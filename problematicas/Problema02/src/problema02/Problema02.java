@@ -39,7 +39,6 @@ public class Problema02 {
                         , acumulador,sumaNumero);
                     }       
                 }
-                
                 sumaNumero = sumaNumero + numero; 
             }
             
