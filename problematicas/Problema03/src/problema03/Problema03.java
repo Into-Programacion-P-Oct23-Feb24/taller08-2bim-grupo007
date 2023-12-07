@@ -21,21 +21,18 @@ public class Problema03 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         //c = 5\9(f-32)
-        double f = 0, c = 0;
-        double operacion;
-        String mensajeFinal = "";
-        for (int i = 1; i <= 20; i++) {
-            System.out.println("Ingrese la cantidad de grados Celsius a "
-                    + "convertur");
-            c = entrada.nextDouble();
-            mensajeFinal = String.format("%sTabala %d\n",
-                    mensajeFinal); 
-            for (double contador = 4; contador <= 20; contador++) {
-                c = 5 / 9 * f - 32;
-            }
-            mensajeFinal = String.format("%s\n", mensajeFinal);
+          double gradosC = 1;
+        double gradosF = 20;
+        String tabla = "       Tabla De converciones\nGrados Fahrenheit  |  "
+                + "Grados Celsius\n";
+        int i;
+        int e = 20;
+        for (i = 1; i < 20; i++) {
+            gradosC = (e - 32.0) * 5 / 9;
+            tabla = String.format("%s      %s                "
+                    + "%.2f\n", tabla, e, gradosC);
+            e += 4;
         }
-            System.out.printf("%s\n", mensajeFinal);
-
+        System.out.print(tabla);
     }
 }
