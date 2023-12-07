@@ -36,7 +36,6 @@ public class Problema01 {
                 + "ingresar datos");
         numero = entrada.nextInt();
         
-        
         for (int contador = 1; contador <= numero; contador++) {
             entrada.nextLine();
             System.out.println("Ingrese el nombre del jugador");
@@ -64,7 +63,8 @@ public class Problema01 {
         System.out.printf("%s",acumulador);
         System.out.printf("%s",edadesJuntas);
         System.out.printf("\nPromedio de edades: %.1f",promedioEdades);
-        System.out.printf(" Promedio de estaturas: %.2f\n", promedioEstatura);
+        System.out.printf(" Promedio de estaturas: %.2f\n"
+                , promedioEstatura);
     }
 
 }
