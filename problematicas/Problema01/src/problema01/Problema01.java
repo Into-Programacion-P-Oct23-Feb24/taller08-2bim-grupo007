@@ -18,7 +18,7 @@ public class Problema01 {
      */
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        entrada.useLocale(Locale.ITALY);
+        entrada.useLocale(Locale.US);
 
         String nombre;
         String posicion;
@@ -29,15 +29,16 @@ public class Problema01 {
         double sumaEstatura = 0;
         double promedioEstatura;
         int numero;
-        String acumulador = "Listado de Jugadores";
-        String edadesJuntas = "Listado de edades";
+        String acumulador = "\nListado de Jugadores\n";
+        String edadesJuntas = "Listado de Edades";
 
         System.out.println("Ingrese el numero de veces que desea "
                 + "ingresar datos");
         numero = entrada.nextInt();
-        entrada.nextLine();
         
-        for (int contador = 0; contador < numero; contador++) {
+        
+        for (int contador = 1; contador <= numero; contador++) {
+            entrada.nextLine();
             System.out.println("Ingrese el nombre del jugador");
             nombre = entrada.nextLine();
             System.out.println("Ingrese la posicion en el campo de juego");
@@ -46,6 +47,7 @@ public class Problema01 {
             edad = entrada.nextInt();
             System.out.println("Ingrese la estatura del jugador");
             estatura = entrada.nextDouble();
+            
             
             sumaEdades = sumaEdades + edad;
             sumaEstatura = (sumaEstatura + estatura);
@@ -62,7 +64,7 @@ public class Problema01 {
         System.out.printf("%s",acumulador);
         System.out.printf("%s",edadesJuntas);
         System.out.printf("\nPromedio de edades: %.1f",promedioEdades);
-        System.out.printf(" Promedio de estaturas: %.2f", promedioEstatura);
+        System.out.printf(" Promedio de estaturas: %.2f\n", promedioEstatura);
     }
 
 }
